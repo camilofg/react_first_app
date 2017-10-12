@@ -56,8 +56,9 @@ class Game extends React.Component{
       }
 
       resetGame(){
-        alert('algo');
+        console.log('algo');
       };
+      
       randomNumber() {
         return 1 + Math.floor(Math.random() * 9)
       };
@@ -131,7 +132,7 @@ class Game extends React.Component{
         });
       }
       render() {
-        const {selectedNumbers, numberStars, answerIsCorrect, redraws, doneStatus} = this.state
+        const {selectedNumbers, numberStars, answerIsCorrect, redraws, doneStatus, resetGame} = this.state
         return (
           <div className="container">
             <h3>Play Nine</h3>
